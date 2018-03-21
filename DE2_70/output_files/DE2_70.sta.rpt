@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE2_70
-Tue Mar 20 11:40:03 2018
+Wed Mar 21 10:24:11 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -89,8 +89,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Tue Mar 20 11:40:02 2018 ;
-; QSYS/de2_70/synthesis/submodules/de2_70_nios.sdc             ; OK     ; Tue Mar 20 11:40:02 2018 ;
+; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Wed Mar 21 10:24:11 2018 ;
+; QSYS/de2_70/synthesis/submodules/de2_70_nios2_processor.sdc  ; OK     ; Wed Mar 21 10:24:11 2018 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -242,10 +242,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 1     ; 1    ;
-; Unconstrained Input Ports       ; 16    ; 16   ;
-; Unconstrained Input Port Paths  ; 16    ; 16   ;
-; Unconstrained Output Ports      ; 37    ; 37   ;
-; Unconstrained Output Port Paths ; 53    ; 53   ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
 +---------------------------------+-------+------+
 
 
@@ -255,7 +255,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 20 11:40:01 2018
+    Info: Processing started: Wed Mar 21 10:24:10 2018
 Info: Command: quartus_sta DE2_70 -c DE2_70
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -295,7 +295,7 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Info (332104): Reading SDC File: 'QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc'
-Info (332104): Reading SDC File: 'QSYS/de2_70/synthesis/submodules/de2_70_nios.sdc'
+Info (332104): Reading SDC File: 'QSYS/de2_70/synthesis/submodules/de2_70_nios2_processor.sdc'
 Warning (332060): Node: clk_clk was determined to be a clock but was found without an associated clock assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
@@ -323,9 +323,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 503 megabytes
-    Info: Processing ended: Tue Mar 20 11:40:03 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 466 megabytes
+    Info: Processing ended: Wed Mar 21 10:24:11 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
