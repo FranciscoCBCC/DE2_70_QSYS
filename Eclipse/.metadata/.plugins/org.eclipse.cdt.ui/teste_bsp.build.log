@@ -1,5 +1,5 @@
 
-**** Clean-only build of configuration Nios II for project teste_bsp ****
+**** Clean-only build of configuration Nios II for project Teste_bsp ****
 
 make clean 
 [BSP clean complete]

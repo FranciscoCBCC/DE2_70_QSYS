@@ -2,11 +2,11 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1509789230;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1509789230.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.104283996;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1581082521">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.858341891;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.858341891.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.99409704;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.853081634">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/DE2_70/QSYS/software/teste_bsp/HAL/inc"/>
-<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/DE2_70/QSYS/software/teste_bsp/"/>
-<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/DE2_70/QSYS/software/teste_bsp/drivers/inc"/>
+<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/QSYS/software/Teste_bsp/HAL/inc"/>
+<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/QSYS/software/Teste_bsp/"/>
+<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/QSYS/software/Teste_bsp/drivers/inc"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\i686-pc-cygwin"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include\c++\backward"/>
@@ -226,21 +226,15 @@
 <definedSymbol symbol="__unix=1"/>
 <definedSymbol symbol="SYSTEM_BUS_WIDTH=32"/>
 <definedSymbol symbol="__hal__=1"/>
-<definedSymbol symbol="ALT_NO_C_PLUS_PLUS=1"/>
-<definedSymbol symbol="ALT_NO_CLEAN_EXIT=1"/>
-<definedSymbol symbol="ALT_NO_EXIT=1"/>
-<definedSymbol symbol="ALT_USE_DIRECT_DRIVERS=1"/>
 <definedSymbol symbol="ALT_NO_INSTRUCTION_EMULATION=1"/>
-<definedSymbol symbol="ALT_USE_SMALL_DRIVERS=1"/>
-<definedSymbol symbol="SMALL_C_LIB=1"/>
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1509789230;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1509789230.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.83302383;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1309811137">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.858341891;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.858341891.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.321840468;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.420639093">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/DE2_70/QSYS/software/teste_bsp/HAL/inc"/>
-<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/DE2_70/QSYS/software/teste_bsp/"/>
-<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/DE2_70/QSYS/software/teste_bsp/drivers/inc"/>
+<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/QSYS/software/Teste_bsp/HAL/inc"/>
+<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/QSYS/software/Teste_bsp/"/>
+<includePath path="C:/Users/Francisco/Desktop/DE2_70_QSYS/QSYS/software/Teste_bsp/drivers/inc"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\lib\gcc\i686-pc-cygwin\4.5.3\include-fixed"/>
 <includePath path="C:\altera\13.0sp1\quartus\bin\cygwin\usr\include"/>
@@ -450,13 +444,7 @@
 <definedSymbol symbol="__unix=1"/>
 <definedSymbol symbol="SYSTEM_BUS_WIDTH=32"/>
 <definedSymbol symbol="__hal__=1"/>
-<definedSymbol symbol="ALT_NO_C_PLUS_PLUS=1"/>
-<definedSymbol symbol="ALT_NO_CLEAN_EXIT=1"/>
-<definedSymbol symbol="ALT_NO_EXIT=1"/>
-<definedSymbol symbol="ALT_USE_DIRECT_DRIVERS=1"/>
 <definedSymbol symbol="ALT_NO_INSTRUCTION_EMULATION=1"/>
-<definedSymbol symbol="ALT_USE_SMALL_DRIVERS=1"/>
-<definedSymbol symbol="SMALL_C_LIB=1"/>
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
