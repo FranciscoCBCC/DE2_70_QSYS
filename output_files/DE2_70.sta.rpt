@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE2_70
-Thu Mar 22 11:56:24 2018
+Fri Mar 23 12:03:56 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -93,8 +93,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Thu Mar 22 11:56:23 2018 ;
-; QSYS/de2_70/synthesis/submodules/de2_70_nios2_processor.sdc  ; OK     ; Thu Mar 22 11:56:23 2018 ;
+; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Fri Mar 23 12:03:56 2018 ;
+; QSYS/de2_70/synthesis/submodules/de2_70_nios2_processor.sdc  ; OK     ; Fri Mar 23 12:03:56 2018 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -301,7 +301,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Mar 22 11:56:23 2018
+    Info: Processing started: Fri Mar 23 12:03:55 2018
 Info: Command: quartus_sta DE2_70 -c DE2_70
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -375,8 +375,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 461 megabytes
-    Info: Processing ended: Thu Mar 22 11:56:24 2018
+    Info: Peak virtual memory: 465 megabytes
+    Info: Processing ended: Fri Mar 23 12:03:56 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

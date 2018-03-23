@@ -1,5 +1,5 @@
 Flow report for DE2_70
-Thu Mar 22 11:56:24 2018
+Fri Mar 23 12:03:56 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 22 11:56:22 2018           ;
+; Flow Status                        ; Successful - Fri Mar 23 12:03:54 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_70                                          ;
 ; Top-level Entity Name              ; de2_70                                          ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C70F896C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,110 / 68,416 ( 3 % )                          ;
-;     Total combinational functions  ; 1,952 / 68,416 ( 3 % )                          ;
+; Total logic elements               ; 2,106 / 68,416 ( 3 % )                          ;
+;     Total combinational functions  ; 1,951 / 68,416 ( 3 % )                          ;
 ;     Dedicated logic registers      ; 1,201 / 68,416 ( 2 % )                          ;
 ; Total registers                    ; 1320                                            ;
 ; Total pins                         ; 59 / 622 ( 9 % )                                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/22/2018 11:55:56 ;
+; Start date & time ; 03/23/2018 12:03:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_70              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+----------------------------------------------------------+---------------+---------------------------------+------------+
 ; Assignment Name                     ; Value                                                    ; Default Value ; Entity Name                     ; Section Id ;
 +-------------------------------------+----------------------------------------------------------+---------------+---------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 70465359729243.152173055601256                           ; --            ; --                              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 70465359729243.152181740904780                           ; --            ; --                              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                     ; --            ; --                              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                     ; --            ; altera_avalon_sc_fifo           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                     ; --            ; altera_merlin_master_agent      ; --         ;
@@ -155,7 +155,7 @@ applicable agreement for further details.
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                      ; --            ; --                              ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                    ; --            ; --                              ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                             ; --            ; --                              ; --         ;
-; SLD_INFO                            ; QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1521730234 ; --            ; --                              ; --         ;
+; SLD_INFO                            ; QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1521812302 ; --            ; --                              ; --         ;
 ; SOPCINFO_FILE                       ; QSYS/de2_70/synthesis/../../de2_70.sopcinfo              ; --            ; --                              ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                       ; --            ; --                              ; --         ;
 +-------------------------------------+----------------------------------------------------------+---------------+---------------------------------+------------+
@@ -166,10 +166,10 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 570 MB              ; 00:00:08                           ;
-; Fitter                    ; 00:00:11     ; 1.9                     ; 1136 MB             ; 00:00:15                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 570 MB              ; 00:00:08                           ;
+; Fitter                    ; 00:00:12     ; 1.5                     ; 1133 MB             ; 00:00:15                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 447 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 461 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 465 MB              ; 00:00:01                           ;
 ; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:27                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

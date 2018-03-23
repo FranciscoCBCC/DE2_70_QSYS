@@ -2,8 +2,8 @@
 **** Build of configuration Nios II for project Teste ****
 
 make all 
-Info: Building ../Teste_bsp/
-make --no-print-directory -C ../Teste_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_QSYS/Eclipse/software/Teste_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_QSYS/Eclipse/software/Teste_bsp/
 [BSP build complete]
 [Teste build complete]
 

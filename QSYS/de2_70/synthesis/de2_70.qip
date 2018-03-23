@@ -2,7 +2,7 @@ set_global_assignment -entity "de2_70" -library "de2_70" -name IP_TOOL_NAME "Qsy
 set_global_assignment -entity "de2_70" -library "de2_70" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "de2_70" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "de2_70" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../de2_70.sopcinfo"]
-set_instance_assignment -entity "de2_70" -library "de2_70" -name SLD_INFO "QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1521730234"
+set_instance_assignment -entity "de2_70" -library "de2_70" -name SLD_INFO "QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1521812302"
 set_global_assignment -library "de2_70" -name MISC_FILE [file join $::quartus(qip_path) "../../de2_70.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "de2_70" -name MISC_FILE [file join $::quartus(qip_path) "../../de2_70.qsys"]
