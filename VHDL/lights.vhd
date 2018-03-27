@@ -8,13 +8,11 @@ ENTITY lights IS
 		KEY : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
 		CLOCK_50 : IN STD_LOGIC;
 		DRAM_DQ : INOUT STD_LOGIC_VECTOR (31 DOWNTO 0);
-		DRAM0_ADDR, DRAM1_ADDR : OUT STD_LOGIC_VECTOR (12 DOWNTO 0);
-		DRAM0_BA_1, DRAM0_BA_0, DRAM1_BA_1, DRAM1_BA_0 : BUFFER STD_LOGIC;
+		DRAM0_ADDR : OUT STD_LOGIC_VECTOR (12 DOWNTO 0);
+		DRAM0_BA_1, DRAM0_BA_0 : BUFFER STD_LOGIC;
 		DRAM0_CAS_N, DRAM0_RAS_N, DRAM0_CLK : OUT STD_LOGIC;
 		DRAM0_CKE, DRAM0_CS_N, DRAM0_WE_N : OUT STD_LOGIC;
-		DRAM0_UDQM, DRAM0_LDQM, DRAM1_UDQM, DRAM1_LDQM : BUFFER STD_LOGIC;
-		DRAM1_CAS_N, DRAM1_RAS_N, DRAM1_CLK : OUT STD_LOGIC;
-		DRAM1_CKE, DRAM1_CS_N, DRAM1_WE_N : OUT STD_LOGIC);
+		DRAM0_UDQM, DRAM0_LDQM : BUFFER STD_LOGIC);
 END lights;
 
 ARCHITECTURE Structure OF lights IS
@@ -29,43 +27,27 @@ ARCHITECTURE Structure OF lights IS
 			sdram_wire_cke : OUT STD_LOGIC;
 			sdram_wire_cs_n : OUT STD_LOGIC;
 			sdram_wire_dq : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-			sdram_wire_dqm : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
+			sdram_wire_dqm : BUFFER STD_LOGIC_VECTOR(1 DOWNTO 0);
 			sdram_wire_ras_n : OUT STD_LOGIC;
 			sdram_wire_we_n : OUT STD_LOGIC);
 	END COMPONENT;
 	
-	SIGNAL DQM : STD_LOGIC_VECTOR(3 DOWNTO 0);
-	SIGNAL BA : STD_LOGIC_VECTOR(1 DOWNTO 0);
-	SIGNAL DRAM_ADDR : STD_LOGIC_VECTOR(12 DOWNTO 0);
-	SIGNAL DRAM_CAS_N, DRAM_RAS_N : STD_LOGIC;
-	SIGNAL DRAM_CLK, DRAM_CKE : STD_LOGIC;
-	SIGNAL DRAM_CS_N, DRAM_WE_N : STD_LOGIC;
-	
 	BEGIN
-		DRAM0_BA_0 <= BA(0); DRAM0_BA_1 <= BA(1);
-		DRAM1_BA_0 <= BA(0); DRAM1_BA_1 <= BA(1);
-		DRAM0_UDQM <= DQM(1); DRAM0_LDQM <= DQM(0);
-		DRAM1_UDQM <= DQM(3); DRAM1_LDQM <= DQM(2);
-		DRAM0_ADDR <= DRAM_ADDR; DRAM1_ADDR <= DRAM_ADDR;
-		DRAM0_CAS_N <= DRAM_CAS_N; DRAM1_CAS_N <= DRAM_CAS_N;
-		DRAM0_CKE <= DRAM_CKE; DRAM1_CKE <= DRAM_CKE;
-		DRAM0_CLK <= DRAM_CLK; DRAM1_CLK <= DRAM_CLK;
-		DRAM0_CS_N <= DRAM_CS_N; DRAM1_CS_N <= DRAM_CS_N;
-		DRAM0_RAS_N <= DRAM_RAS_N; DRAM1_RAS_N <= DRAM_RAS_N;
-		DRAM0_WE_N <= DRAM_WE_N; DRAM1_WE_N <= DRAM_WE_N;
 	
 		NiosII : nios_system
 		PORT MAP(
 			clk_clk => CLOCK_50,
 			reset_reset_n => KEY(0),
-			sdram_clk_clk => DRAM_CLK,
-			sdram_wire_addr => DRAM_ADDR,
-			sdram_wire_ba => BA,
-			sdram_wire_cas_n => DRAM_CAS_N,
-			sdram_wire_cke => DRAM_CKE,
-			sdram_wire_cs_n => DRAM_CS_N,
-			sdram_wire_dq => DRAM_DQ,
-			sdram_wire_dqm => DQM,
-			sdram_wire_ras_n => DRAM_RAS_N,
-			sdram_wire_we_n => DRAM_WE_N);
+			sdram_clk_clk => DRAM0_CLK,			
+			sdram_wire_addr => DRAM0_ADDR,			
+			sdram_wire_ba(0) => DRAM0_BA_0, 
+			sdram_wire_ba(1) => DRAM0_BA_1, 			
+			sdram_wire_cas_n => DRAM0_CAS_N,
+			sdram_wire_cke => DRAM0_CKE,
+			sdram_wire_cs_n => DRAM0_CS_N,
+			sdram_wire_dq => DRAM_DQ,			
+			sdram_wire_dqm(0) => DRAM0_LDQM,
+			sdram_wire_dqm(1) => DRAM0_UDQM,			
+			sdram_wire_ras_n => DRAM0_RAS_N,
+			sdram_wire_we_n => DRAM0_WE_N);
 END Structure;

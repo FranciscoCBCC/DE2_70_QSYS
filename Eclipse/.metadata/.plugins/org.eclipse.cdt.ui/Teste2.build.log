@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Teste2 ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_QSYS/Eclipse/software/Teste2_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_QSYS/Eclipse/software/Teste2_bsp/
+[BSP build complete]
+[Teste2 build complete]
+
+**** Build Finished ****

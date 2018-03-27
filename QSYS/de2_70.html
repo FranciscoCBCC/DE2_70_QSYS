@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2018.03.23.10:38:22</td>
+    <td class="l">2018.03.27.11:02:29</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -167,8 +167,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>08000000</td>
-    <td class="addr"><span style="color:#989898">0x</span>08000000</td>
+    <td class="addr"><span style="color:#989898">0x</span>04000000</td>
+    <td class="addr"><span style="color:#989898">0x</span>04000000</td>
    </tr>
   </table>
   <a name="module_clk_0"> </a>
@@ -739,11 +739,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">resetAbsoluteAddr</td>
-        <td class="parametervalue">134217728</td>
+        <td class="parametervalue">67108864</td>
        </tr>
        <tr>
         <td class="parametername">exceptionAbsoluteAddr</td>
-        <td class="parametervalue">134217760</td>
+        <td class="parametervalue">67108896</td>
        </tr>
        <tr>
         <td class="parametername">breakAbsoluteAddr</td>
@@ -775,11 +775,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">instAddrWidth</td>
-        <td class="parametervalue">28</td>
+        <td class="parametervalue">27</td>
        </tr>
        <tr>
         <td class="parametername">dataAddrWidth</td>
-        <td class="parametervalue">28</td>
+        <td class="parametervalue">27</td>
        </tr>
        <tr>
         <td class="parametername">tightlyCoupledDataMaster0AddrWidth</td>
@@ -815,11 +815,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">instSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='onchip_memory.s1' start='0x0' end='0x1000' /&gt;&lt;slave name='nios2_processor.jtag_debug_module' start='0x1800' end='0x2000' /&gt;&lt;slave name='sdram.s1' start='0x8000000' end='0xC000000' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='onchip_memory.s1' start='0x0' end='0x1000' /&gt;&lt;slave name='nios2_processor.jtag_debug_module' start='0x1800' end='0x2000' /&gt;&lt;slave name='sdram.s1' start='0x4000000' end='0x6000000' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">dataSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='onchip_memory.s1' start='0x0' end='0x1000' /&gt;&lt;slave name='nios2_processor.jtag_debug_module' start='0x1800' end='0x2000' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x2000' end='0x2008' /&gt;&lt;slave name='sdram.s1' start='0x8000000' end='0xC000000' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='onchip_memory.s1' start='0x0' end='0x1000' /&gt;&lt;slave name='nios2_processor.jtag_debug_module' start='0x1800' end='0x2000' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x2000' end='0x2008' /&gt;&lt;slave name='sdram.s1' start='0x4000000' end='0x6000000' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">clockFrequency</td>
@@ -916,7 +916,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">DATA_ADDR_WIDTH</td>
-        <td class="parametervalue">28</td>
+        <td class="parametervalue">27</td>
        </tr>
        <tr>
         <td class="parametername">DCACHE_LINE_SIZE</td>
@@ -932,7 +932,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">EXCEPTION_ADDR</td>
-        <td class="parametervalue">0x08000020</td>
+        <td class="parametervalue">0x04000020</td>
        </tr>
        <tr>
         <td class="parametername">FLUSHDA_SUPPORTED</td>
@@ -976,11 +976,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">INST_ADDR_WIDTH</td>
-        <td class="parametervalue">28</td>
+        <td class="parametervalue">27</td>
        </tr>
        <tr>
         <td class="parametername">RESET_ADDR</td>
-        <td class="parametervalue">0x08000000</td>
+        <td class="parametervalue">0x04000000</td>
        </tr>
       </table>
      </td>
@@ -1475,7 +1475,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">dataWidth</td>
-        <td class="parametervalue">32</td>
+        <td class="parametervalue">16</td>
        </tr>
        <tr>
         <td class="parametername">generateSimulationModel</td>
@@ -1539,7 +1539,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">size</td>
-        <td class="parametervalue">67108864</td>
+        <td class="parametervalue">33554432</td>
        </tr>
        <tr>
         <td class="parametername">addressWidth</td>
@@ -1612,7 +1612,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">SDRAM_DATA_WIDTH</td>
-        <td class="parametervalue">32</td>
+        <td class="parametervalue">16</td>
        </tr>
        <tr>
         <td class="parametername">SDRAM_NUM_BANKS</td>

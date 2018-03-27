@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>23/03/2018 12:05:40</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1521817540990</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>27/03/2018 11:04:49</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1522159489808</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Francisco\Desktop\DE2_70_QSYS\Eclipse\software\Teste_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Francisco\Desktop\DE2_70_QSYS\QSYS\de2_70.sopcinfo</SopcDesignFile>
@@ -876,8 +876,8 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sdram</slaveDescriptor>
-                <addressRange>0x08000000 - 0x0BFFFFFF</addressRange>
-                <addressSpan>67108864</addressSpan>
+                <addressRange>0x04000000 - 0x05FFFFFF</addressRange>
+                <addressSpan>33554432</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <LinkerSection>

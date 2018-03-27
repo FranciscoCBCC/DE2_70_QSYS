@@ -96,9 +96,9 @@ GND*                         : A26       :        :                   :         
 VCCIO4                       : A27       : power  :                   : 3.3V    : 4         :                
 GND*                         : A28       :        :                   :         : 4         :                
 GND                          : A29       : gnd    :                   :         :           :                
-sdram_wire_dq[27]            : AA1       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[28]            : AA2       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[29]            : AA3       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : AA1       :        :                   :         : 1         :                
+GND*                         : AA2       :        :                   :         : 1         :                
+GND*                         : AA3       :        :                   :         : 1         :                
 sdram_wire_addr[0]           : AA4       : output : 3.3-V LVTTL       :         : 1         : Y              
 sdram_wire_addr[1]           : AA5       : output : 3.3-V LVTTL       :         : 1         : Y              
 sdram_wire_addr[2]           : AA6       : output : 3.3-V LVTTL       :         : 1         : Y              
@@ -126,8 +126,8 @@ GND*                         : AA27      :        :                   :         
 GND*                         : AA28      :        :                   :         : 6         :                
 GND*                         : AA29      :        :                   :         : 6         :                
 GND*                         : AA30      :        :                   :         : 6         :                
-sdram_wire_dq[30]            : AB1       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[31]            : AB2       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : AB1       :        :                   :         : 1         :                
+GND*                         : AB2       :        :                   :         : 1         :                
 VCCIO1                       : AB3       : power  :                   : 3.3V    : 1         :                
 GND                          : AB4       : gnd    :                   :         :           :                
 sdram_wire_addr[3]           : AB5       : output : 3.3-V LVTTL       :         : 1         : Y              
@@ -703,7 +703,7 @@ GND*                         : M6        :        :                   :         
 GND*                         : M7        :        :                   :         : 2         :                
 GND*                         : M8        :        :                   :         : 2         :                
 GND*                         : M9        :        :                   :         : 2         :                
-sdram_wire_dqm[2]            : M10       : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : M10       :        :                   :         : 2         :                
 GND                          : M11       : gnd    :                   :         :           :                
 VCCINT                       : M12       : power  :                   : 1.2V    :           :                
 VCCINT                       : M13       : power  :                   : 1.2V    :           :                
@@ -844,14 +844,14 @@ GND*                         : T27       :        :                   :         
 GND*                         : T28       :        :                   :         : 6         :                
 reset_reset_n                : T29       : input  : 3.3-V LVTTL       :         : 6         : Y              
 VCCIO6                       : T30       : power  :                   : 3.3V    : 6         :                
-sdram_wire_dq[16]            : U1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[17]            : U2        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[18]            : U3        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : U1        :        :                   :         : 1         :                
+GND*                         : U2        :        :                   :         : 1         :                
+GND*                         : U3        :        :                   :         : 1         :                
 GND*                         : U4        :        :                   :         : 1         :                
 GND*                         : U5        :        :                   :         : 1         :                
 GND*                         : U6        :        :                   :         : 1         :                
 GND*                         : U7        :        :                   :         : 1         :                
-sdram_wire_dqm[3]            : U8        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : U8        :        :                   :         : 1         :                
 GND*                         : U9        :        :                   :         : 1         :                
 GND                          : U10       : gnd    :                   :         :           :                
 VCCINT                       : U11       : power  :                   : 1.2V    :           :                
@@ -875,8 +875,8 @@ MSEL1                        : U28       :        :                   :         
 GND*                         : U29       :        :                   :         : 6         :                
 GND*                         : U30       :        :                   :         : 6         :                
 GND                          : V1        : gnd    :                   :         :           :                
-sdram_wire_dq[19]            : V2        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[20]            : V3        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : V2        :        :                   :         : 1         :                
+GND*                         : V3        :        :                   :         : 1         :                
 GND*                         : V4        :        :                   :         : 1         :                
 VCCIO1                       : V5        : power  :                   : 3.3V    : 1         :                
 GND                          : V6        : gnd    :                   :         :           :                
@@ -904,9 +904,9 @@ GND*                         : V27       :        :                   :         
 GND*                         : V28       :        :                   :         : 6         :                
 GND*                         : V29       :        :                   :         : 6         :                
 GND                          : V30       : gnd    :                   :         :           :                
-sdram_wire_dq[21]            : W1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[22]            : W2        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[23]            : W3        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : W1        :        :                   :         : 1         :                
+GND*                         : W2        :        :                   :         : 1         :                
+GND*                         : W3        :        :                   :         : 1         :                
 GND*                         : W4        :        :                   :         : 1         :                
 GND*                         : W5        :        :                   :         : 1         :                
 GND*                         : W6        :        :                   :         : 1         :                
@@ -934,9 +934,9 @@ GND*                         : W27       :        :                   :         
 GND*                         : W28       :        :                   :         : 6         :                
 GND*                         : W29       :        :                   :         : 6         :                
 GND*                         : W30       :        :                   :         : 6         :                
-sdram_wire_dq[24]            : Y1        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[25]            : Y2        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-sdram_wire_dq[26]            : Y3        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : Y1        :        :                   :         : 1         :                
+GND*                         : Y2        :        :                   :         : 1         :                
+GND*                         : Y3        :        :                   :         : 1         :                
 GND*                         : Y4        :        :                   :         : 1         :                
 GND*                         : Y5        :        :                   :         : 1         :                
 GND*                         : Y6        :        :                   :         : 1         :                
