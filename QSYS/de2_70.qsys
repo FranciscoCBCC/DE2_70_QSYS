@@ -12,11 +12,81 @@
    element $${FILENAME}
    {
    }
-   element jtag_uart.avalon_jtag_slave
+   element alpha_blender
    {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element video_character_buffer_with_dma.avalon_char_buffer_slave
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
       datum baseAddress
       {
-         value = "8192";
+         value = "35651584";
+         type = "String";
+      }
+   }
+   element video_character_buffer_with_dma.avalon_char_control_slave
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "35672080";
+         type = "String";
+      }
+   }
+   element vga_pixel_buffer.avalon_control_slave
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "35672064";
+         type = "String";
+      }
+   }
+   element jtag_uart.avalon_jtag_slave
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "35672088";
+         type = "String";
+      }
+   }
+   element pixel_buffer.avalon_ssram_slave
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "33554432";
          type = "String";
       }
    }
@@ -27,6 +97,11 @@
          value = "0";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element clocks
    {
@@ -35,12 +110,22 @@
          value = "5";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element nios2_processor.jtag_debug_module
    {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
       datum baseAddress
       {
-         value = "6144";
+         value = "35670016";
          type = "String";
       }
    }
@@ -51,6 +136,11 @@
          value = "3";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element nios2_processor
    {
@@ -58,6 +148,11 @@
       {
          value = "1";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
    element onchip_memory
@@ -67,8 +162,26 @@
          value = "2";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
-   element onchip_memory.s1
+   element pixel_buffer
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element sdram.s1
    {
       datum _lockedAddress
       {
@@ -81,11 +194,16 @@
          type = "String";
       }
    }
-   element sdram.s1
+   element onchip_memory.s1
    {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
       datum baseAddress
       {
-         value = "67108864";
+         value = "35663872";
          type = "String";
       }
    }
@@ -95,6 +213,89 @@
       {
          value = "4";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element vga_controller
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element vga_dual_clock_fifo
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element vga_pixel_buffer
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element vga_pixel_rgb_resampler
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element vga_pixel_scaler
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element video_character_buffer_with_dma
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
 }
@@ -112,13 +313,23 @@
  <parameter name="projectName" value="" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1522159096079" />
+ <parameter name="timeStamp" value="1523274353332" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end" />
  <interface name="sdram_clk" internal="clocks.sdram_clk" type="clock" dir="start" />
+ <interface
+   name="vga_controller_external_interface"
+   internal="vga_controller.external_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pixel_buffer_external_interface"
+   internal="pixel_buffer.external_interface"
+   type="conduit"
+   dir="end" />
  <module kind="clock_source" version="13.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -220,8 +431,8 @@
   <parameter name="ocimem_ramBlockType" value="Automatic" />
   <parameter name="mmu_ramBlockType" value="Automatic" />
   <parameter name="bht_ramBlockType" value="Automatic" />
-  <parameter name="instAddrWidth" value="27" />
-  <parameter name="dataAddrWidth" value="27" />
+  <parameter name="instAddrWidth" value="26" />
+  <parameter name="dataAddrWidth" value="26" />
   <parameter name="tightlyCoupledDataMaster0AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster2AddrWidth" value="1" />
@@ -230,8 +441,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory.s1' start='0x0' end='0x1000' /><slave name='nios2_processor.jtag_debug_module' start='0x1800' end='0x2000' /><slave name='sdram.s1' start='0x4000000' end='0x6000000' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory.s1' start='0x0' end='0x1000' /><slave name='nios2_processor.jtag_debug_module' start='0x1800' end='0x2000' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2000' end='0x2008' /><slave name='sdram.s1' start='0x4000000' end='0x6000000' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x0' end='0x2000000' /><slave name='onchip_memory.s1' start='0x2203000' end='0x2204000' /><slave name='nios2_processor.jtag_debug_module' start='0x2204800' end='0x2205000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x0' end='0x2000000' /><slave name='pixel_buffer.avalon_ssram_slave' start='0x2000000' end='0x2200000' /><slave name='video_character_buffer_with_dma.avalon_char_buffer_slave' start='0x2200000' end='0x2202000' /><slave name='onchip_memory.s1' start='0x2203000' end='0x2204000' /><slave name='nios2_processor.jtag_debug_module' start='0x2204800' end='0x2205000' /><slave name='vga_pixel_buffer.avalon_control_slave' start='0x2205000' end='0x2205010' /><slave name='video_character_buffer_with_dma.avalon_char_control_slave' start='0x2205010' end='0x2205018' /><slave name='jtag_uart.avalon_jtag_slave' start='0x2205018' end='0x2205020' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone II" />
   <parameter name="internalIrqMaskSystemInfo" value="32" />
@@ -323,10 +534,102 @@
   <parameter name="board" value="DE2-70" />
   <parameter name="sys_clk_freq" value="50" />
   <parameter name="sdram_clk" value="true" />
-  <parameter name="vga_clk" value="false" />
+  <parameter name="vga_clk" value="true" />
   <parameter name="audio_clk" value="false" />
   <parameter name="audio_clk_freq" value="12.288" />
   <parameter name="AUTO_CLK_IN_PRIMARY_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_character_buffer_with_dma"
+   version="13.0"
+   enabled="1"
+   name="video_character_buffer_with_dma">
+  <parameter name="vga_device" value="On-board VGA DAC" />
+  <parameter name="enable_transparency" value="true" />
+  <parameter name="color_bits" value="1-bit" />
+  <parameter name="resolution" value="80 x 60" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_dual_clock_buffer"
+   version="13.0"
+   enabled="1"
+   name="vga_dual_clock_fifo">
+  <parameter name="color_bits" value="10" />
+  <parameter name="color_planes" value="3" />
+  <parameter name="AUTO_CLOCK_STREAM_IN_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_CLOCK_STREAM_OUT_CLOCK_RATE" value="25000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_vga_controller"
+   version="13.0"
+   enabled="1"
+   name="vga_controller">
+  <parameter name="board" value="DE2-70" />
+  <parameter name="device" value="VGA Connector" />
+  <parameter name="underflow_flag" value="false" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="25000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_pixel_buffer_dma"
+   version="13.0"
+   enabled="1"
+   name="vga_pixel_buffer">
+  <parameter name="addr_mode" value="X-Y" />
+  <parameter name="start_address" value="134217728" />
+  <parameter name="back_start_address" value="134217728" />
+  <parameter name="image_width" value="320" />
+  <parameter name="image_height" value="240" />
+  <parameter name="color_space" value="16-bit RGB" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_sram"
+   version="13.0"
+   enabled="1"
+   name="pixel_buffer">
+  <parameter name="board" value="DE2-70" />
+  <parameter name="pixel_buffer" value="true" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_rgb_resampler"
+   version="13.0"
+   enabled="1"
+   name="vga_pixel_rgb_resampler">
+  <parameter name="input_type" value="16-bit RGB" />
+  <parameter name="output_type" value="30-bit RGB" />
+  <parameter name="alpha" value="1023" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_scaler"
+   version="13.0"
+   enabled="1"
+   name="vga_pixel_scaler">
+  <parameter name="width_scaling" value="2" />
+  <parameter name="height_scaling" value="2" />
+  <parameter name="width_in" value="320" />
+  <parameter name="height_in" value="240" />
+  <parameter name="color_bits" value="10" />
+  <parameter name="color_planes" value="3" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_alpha_blender"
+   version="13.0"
+   enabled="1"
+   name="alpha_blender">
+  <parameter name="mode" value="Simple" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
  </module>
  <connection
@@ -335,7 +638,7 @@
    start="nios2_processor.instruction_master"
    end="nios2_processor.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1800" />
+  <parameter name="baseAddress" value="0x02204800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -344,7 +647,7 @@
    start="nios2_processor.data_master"
    end="nios2_processor.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x1800" />
+  <parameter name="baseAddress" value="0x02204800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -383,7 +686,7 @@
    start="nios2_processor.data_master"
    end="onchip_memory.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x02203000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -392,7 +695,7 @@
    start="nios2_processor.instruction_master"
    end="onchip_memory.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x02203000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -401,7 +704,7 @@
    start="nios2_processor.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2000" />
+  <parameter name="baseAddress" value="0x02205018" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -418,7 +721,7 @@
    start="nios2_processor.data_master"
    end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04000000" />
+  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -427,7 +730,7 @@
    start="nios2_processor.instruction_master"
    end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x04000000" />
+  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -466,6 +769,216 @@
    version="13.0"
    start="clocks.sys_clk"
    end="nios2_processor.clk" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="video_character_buffer_with_dma.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="video_character_buffer_with_dma.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="video_character_buffer_with_dma.clock_reset_reset" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="nios2_processor.data_master"
+   end="video_character_buffer_with_dma.avalon_char_control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x02205010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="nios2_processor.data_master"
+   end="video_character_buffer_with_dma.avalon_char_buffer_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x02200000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="video_character_buffer_with_dma.avalon_char_source"
+   end="alpha_blender.avalon_foreground_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="vga_dual_clock_fifo.clock_stream_in" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="vga_dual_clock_fifo.clock_stream_in_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="vga_dual_clock_fifo.clock_stream_in_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.vga_clk"
+   end="vga_dual_clock_fifo.clock_stream_out" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="vga_dual_clock_fifo.clock_stream_out_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="vga_dual_clock_fifo.clock_stream_out_reset" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="alpha_blender.avalon_blended_source"
+   end="vga_dual_clock_fifo.avalon_dc_buffer_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="vga_dual_clock_fifo.avalon_dc_buffer_source"
+   end="vga_controller.avalon_vga_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.vga_clk"
+   end="vga_controller.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="vga_controller.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="vga_controller.clock_reset_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="vga_pixel_buffer.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="vga_pixel_buffer.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="vga_pixel_buffer.clock_reset_reset" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="vga_pixel_buffer.avalon_pixel_dma_master"
+   end="pixel_buffer.avalon_ssram_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x02000000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="nios2_processor.data_master"
+   end="vga_pixel_buffer.avalon_control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x02205000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="vga_pixel_buffer.avalon_pixel_source"
+   end="vga_pixel_rgb_resampler.avalon_rgb_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="pixel_buffer.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="pixel_buffer.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="pixel_buffer.clock_reset_reset" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="nios2_processor.data_master"
+   end="pixel_buffer.avalon_ssram_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x02000000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="vga_pixel_rgb_resampler.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="vga_pixel_rgb_resampler.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="vga_pixel_rgb_resampler.clock_reset_reset" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="vga_pixel_rgb_resampler.avalon_rgb_source"
+   end="vga_pixel_scaler.avalon_scaler_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="vga_pixel_scaler.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="vga_pixel_scaler.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="vga_pixel_scaler.clock_reset_reset" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="vga_pixel_scaler.avalon_scaler_source"
+   end="alpha_blender.avalon_background_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="alpha_blender.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_processor.jtag_debug_module_reset"
+   end="alpha_blender.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="alpha_blender.clock_reset_reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

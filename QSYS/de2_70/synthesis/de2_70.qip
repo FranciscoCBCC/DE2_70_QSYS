@@ -2,7 +2,7 @@ set_global_assignment -entity "de2_70" -library "de2_70" -name IP_TOOL_NAME "Qsy
 set_global_assignment -entity "de2_70" -library "de2_70" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "de2_70" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "de2_70" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../de2_70.sopcinfo"]
-set_instance_assignment -entity "de2_70" -library "de2_70" -name SLD_INFO "QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1522159349"
+set_instance_assignment -entity "de2_70" -library "de2_70" -name SLD_INFO "QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1523275653"
 set_global_assignment -library "de2_70" -name MISC_FILE [file join $::quartus(qip_path) "../../de2_70.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "de2_70" -name MISC_FILE [file join $::quartus(qip_path) "../../de2_70.qsys"]
@@ -11,18 +11,31 @@ set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qi
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_video_character_buffer_with_dma_avalon_char_buffer_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_nios2_processor_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_sdram_s1_translator_avalon_universal_slave_0_agent.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_video_character_buffer_with_dma_avalon_char_buffer_slave_translator_avalon_universal_slave_0_agent.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_width_adapter.vhd"]
-set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_width_adapter_001.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_width_adapter_002.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_width_adapter_003.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_width_adapter_006.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_nios2_processor_instruction_master_translator.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_nios2_processor_data_master_translator.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_vga_pixel_buffer_avalon_pixel_dma_master_translator.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_burst_adapter.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_burst_adapter_001.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_nios2_processor_jtag_debug_module_translator.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_onchip_memory_s1_translator.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_sdram_s1_translator.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_jtag_uart_avalon_jtag_slave_translator.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_video_character_buffer_with_dma_avalon_char_control_slave_translator.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_video_character_buffer_with_dma_avalon_char_buffer_slave_translator.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_vga_pixel_buffer_avalon_control_slave_translator.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_pixel_buffer_avalon_ssram_slave_translator.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_rst_controller.vhd"]
 set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_rst_controller_001.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_nios2_processor_instruction_master_translator_avalon_universal_master_0_agent.vhd"]
+set_global_assignment -library "de2_70" -name VHDL_FILE [file join $::quartus(qip_path) "de2_70_vga_pixel_buffer_avalon_pixel_dma_master_translator_avalon_universal_master_0_agent.vhd"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_irq_mapper.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
@@ -30,18 +43,25 @@ set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::q
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_rsp_xbar_mux_001.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_rsp_xbar_mux.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_rsp_xbar_demux_005.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_rsp_xbar_demux_003.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_rsp_xbar_demux_002.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_rsp_xbar_demux.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_cmd_xbar_mux_002.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_cmd_xbar_mux.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_cmd_xbar_demux_002.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_cmd_xbar_demux_001.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_cmd_xbar_demux.sv"]
 set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
 set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
 set_global_assignment -library "de2_70" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_adapter.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_id_router_007.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_id_router_005.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_id_router_003.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_id_router_002.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_id_router.sv"]
+set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_addr_router_002.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_addr_router_001.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_addr_router.sv"]
 set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
@@ -49,6 +69,24 @@ set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::q
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "de2_70" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_alpha_blender_normal.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_alpha_blender_simple.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_alpha_blender.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_scaler_shrink.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_scaler_multiply_width.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_scaler_multiply_height.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_vga_pixel_scaler.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_vga_pixel_rgb_resampler.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_pixel_buffer.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_vga_pixel_buffer.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_avalon_video_vga_timing.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_vga_controller.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_vga_dual_clock_fifo.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_128_character_rom.v"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_fb_color_rom.v"]
+set_global_assignment -library "de2_70" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_char_mode_rom_128.mif"]
+set_global_assignment -library "de2_70" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/altera_up_video_fb_color_rom.mif"]
+set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_video_character_buffer_with_dma.v"]
 set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_clocks.v"]
 set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_sdram.v"]
 set_global_assignment -library "de2_70" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/de2_70_jtag_uart.v"]
@@ -77,15 +115,27 @@ set_global_assignment -entity "de2_70_rsp_xbar_mux_001" -library "de2_70" -name 
 set_global_assignment -entity "de2_70_rsp_xbar_mux" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "de2_70_rsp_xbar_mux" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_rsp_xbar_mux" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_rsp_xbar_demux_005" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "de2_70_rsp_xbar_demux_005" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_rsp_xbar_demux_005" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "de2_70_rsp_xbar_demux_003" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "de2_70_rsp_xbar_demux_003" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_rsp_xbar_demux_003" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_rsp_xbar_demux_002" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "de2_70_rsp_xbar_demux_002" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_rsp_xbar_demux_002" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "de2_70_rsp_xbar_demux" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "de2_70_rsp_xbar_demux" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_rsp_xbar_demux" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_cmd_xbar_mux_002" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "de2_70_cmd_xbar_mux_002" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_cmd_xbar_mux_002" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "de2_70_cmd_xbar_mux" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_multiplexer"
 set_global_assignment -entity "de2_70_cmd_xbar_mux" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_cmd_xbar_mux" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_cmd_xbar_demux_002" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "de2_70_cmd_xbar_demux_002" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_cmd_xbar_demux_002" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "de2_70_cmd_xbar_demux_001" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
 set_global_assignment -entity "de2_70_cmd_xbar_demux_001" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_cmd_xbar_demux_001" -library "de2_70" -name IP_TOOL_ENV "Qsys"
@@ -98,6 +148,12 @@ set_global_assignment -entity "altera_reset_controller" -library "de2_70" -name 
 set_global_assignment -entity "altera_merlin_burst_adapter" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
 set_global_assignment -entity "altera_merlin_burst_adapter" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "altera_merlin_burst_adapter" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_id_router_007" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "de2_70_id_router_007" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_id_router_007" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_id_router_005" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "de2_70_id_router_005" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_id_router_005" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "de2_70_id_router_003" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "de2_70_id_router_003" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_id_router_003" -library "de2_70" -name IP_TOOL_ENV "Qsys"
@@ -107,6 +163,9 @@ set_global_assignment -entity "de2_70_id_router_002" -library "de2_70" -name IP_
 set_global_assignment -entity "de2_70_id_router" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "de2_70_id_router" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_id_router" -library "de2_70" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "de2_70_addr_router_002" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "de2_70_addr_router_002" -library "de2_70" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "de2_70_addr_router_002" -library "de2_70" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "de2_70_addr_router_001" -library "de2_70" -name IP_TOOL_NAME "altera_merlin_router"
 set_global_assignment -entity "de2_70_addr_router_001" -library "de2_70" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "de2_70_addr_router_001" -library "de2_70" -name IP_TOOL_ENV "Qsys"

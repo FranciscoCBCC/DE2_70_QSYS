@@ -1,11 +1,16 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="DE2_70">
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_jtag_uart:jtag_uart|de2_70_jtag_uart_scfifo_w:the_de2_70_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_nios2_processor:nios2_processor|de2_70_nios2_processor_nios2_oci:the_de2_70_nios2_processor_nios2_oci|de2_70_nios2_processor_nios2_ocimem:the_de2_70_nios2_processor_nios2_ocimem|de2_70_nios2_processor_ociram_sp_ram_module:de2_70_nios2_processor_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_mb81.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_nios2_processor:nios2_processor|de2_70_nios2_processor_register_bank_a_module:de2_70_nios2_processor_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_iug1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_nios2_processor:nios2_processor|de2_70_nios2_processor_register_bank_b_module:de2_70_nios2_processor_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_jug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_video_character_buffer_with_dma:video_character_buffer_with_dma|altera_up_video_128_character_rom:Character_Rom|altsyncram:character_data_rom" CBX_FILE_NAME="altsyncram_e5i1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_jtag_uart:jtag_uart|de2_70_jtag_uart_scfifo_r:the_de2_70_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_onchip_memory:onchip_memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_eec1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_vga_dual_clock_fifo:vga_dual_clock_fifo|dcfifo:Data_FIFO" CBX_FILE_NAME="dcfifo_5oj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_vga_pixel_buffer:vga_pixel_buffer|scfifo:Image_Buffer" CBX_FILE_NAME="scfifo_70a1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_vga_pixel_scaler:vga_pixel_scaler|altera_up_video_scaler_multiply_height:Multiply_Height|scfifo:Multiply_Height_FIFO" CBX_FILE_NAME="scfifo_qd31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_jtag_uart:jtag_uart|de2_70_jtag_uart_scfifo_w:the_de2_70_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_nios2_processor:nios2_processor|de2_70_nios2_processor_register_bank_a_module:de2_70_nios2_processor_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_iug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_70|de2_70_video_character_buffer_with_dma:video_character_buffer_with_dma|altsyncram:Char_Buffer_Memory" CBX_FILE_NAME="altsyncram_4272.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

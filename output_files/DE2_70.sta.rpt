@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE2_70
-Tue Mar 27 11:03:51 2018
+Mon Apr 09 10:01:08 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -93,8 +93,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Tue Mar 27 11:03:51 2018 ;
-; QSYS/de2_70/synthesis/submodules/de2_70_nios2_processor.sdc  ; OK     ; Tue Mar 27 11:03:51 2018 ;
+; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Mon Apr 09 10:01:08 2018 ;
+; QSYS/de2_70/synthesis/submodules/de2_70_nios2_processor.sdc  ; OK     ; Mon Apr 09 10:01:08 2018 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -155,22 +155,26 @@ No paths to report.
 +--------+--------------+----------------+-----------+---------------------+------------+---------------------+
 
 
-+------------------------------------------------------+
-; Propagation Delay                                    ;
-+------------+---------------+-------+----+----+-------+
-; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
-+------------+---------------+-------+----+----+-------+
-; clk_clk    ; sdram_clk_clk ; 2.770 ;    ;    ; 2.770 ;
-+------------+---------------+-------+----+----+-------+
++------------------------------------------------------------------------------------+
+; Propagation Delay                                                                  ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port                           ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; clk_clk    ; pixel_buffer_external_interface_CLK   ; 2.770 ;       ;       ; 2.770 ;
+; clk_clk    ; sdram_clk_clk                         ; 2.770 ;       ;       ; 2.770 ;
+; clk_clk    ; vga_controller_external_interface_CLK ;       ; 2.878 ; 2.878 ;       ;
++------------+---------------------------------------+-------+-------+-------+-------+
 
 
-+------------------------------------------------------+
-; Minimum Propagation Delay                            ;
-+------------+---------------+-------+----+----+-------+
-; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
-+------------+---------------+-------+----+----+-------+
-; clk_clk    ; sdram_clk_clk ; 2.770 ;    ;    ; 2.770 ;
-+------------+---------------+-------+----+----+-------+
++------------------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                          ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port                           ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; clk_clk    ; pixel_buffer_external_interface_CLK   ; 2.770 ;       ;       ; 2.770 ;
+; clk_clk    ; sdram_clk_clk                         ; 2.770 ;       ;       ; 2.770 ;
+; clk_clk    ; vga_controller_external_interface_CLK ;       ; 2.878 ; 2.878 ;       ;
++------------+---------------------------------------+-------+-------+-------+-------+
 
 
 ----------------------------
@@ -215,22 +219,26 @@ No paths to report.
 +--------+--------------+----------------+-----------+---------------------+------------+---------------------+
 
 
-+------------------------------------------------------+
-; Propagation Delay                                    ;
-+------------+---------------+-------+----+----+-------+
-; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
-+------------+---------------+-------+----+----+-------+
-; clk_clk    ; sdram_clk_clk ; 1.455 ;    ;    ; 1.455 ;
-+------------+---------------+-------+----+----+-------+
++------------------------------------------------------------------------------------+
+; Propagation Delay                                                                  ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port                           ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; clk_clk    ; pixel_buffer_external_interface_CLK   ; 1.455 ;       ;       ; 1.455 ;
+; clk_clk    ; sdram_clk_clk                         ; 1.456 ;       ;       ; 1.456 ;
+; clk_clk    ; vga_controller_external_interface_CLK ;       ; 1.560 ; 1.560 ;       ;
++------------+---------------------------------------+-------+-------+-------+-------+
 
 
-+------------------------------------------------------+
-; Minimum Propagation Delay                            ;
-+------------+---------------+-------+----+----+-------+
-; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
-+------------+---------------+-------+----+----+-------+
-; clk_clk    ; sdram_clk_clk ; 1.455 ;    ;    ; 1.455 ;
-+------------+---------------+-------+----+----+-------+
++------------------------------------------------------------------------------------+
+; Minimum Propagation Delay                                                          ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port                           ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; clk_clk    ; pixel_buffer_external_interface_CLK   ; 1.455 ;       ;       ; 1.455 ;
+; clk_clk    ; sdram_clk_clk                         ; 1.456 ;       ;       ; 1.456 ;
+; clk_clk    ; vga_controller_external_interface_CLK ;       ; 1.560 ; 1.560 ;       ;
++------------+---------------------------------------+-------+-------+-------+-------+
 
 
 +--------------------------------------------------------------------------------+
@@ -245,22 +253,26 @@ No paths to report.
 +----------------------+-------+------+----------+---------+---------------------+
 
 
-+------------------------------------------------------+
-; Progagation Delay                                    ;
-+------------+---------------+-------+----+----+-------+
-; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
-+------------+---------------+-------+----+----+-------+
-; clk_clk    ; sdram_clk_clk ; 2.770 ;    ;    ; 2.770 ;
-+------------+---------------+-------+----+----+-------+
++------------------------------------------------------------------------------------+
+; Progagation Delay                                                                  ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port                           ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; clk_clk    ; pixel_buffer_external_interface_CLK   ; 2.770 ;       ;       ; 2.770 ;
+; clk_clk    ; sdram_clk_clk                         ; 2.770 ;       ;       ; 2.770 ;
+; clk_clk    ; vga_controller_external_interface_CLK ;       ; 2.878 ; 2.878 ;       ;
++------------+---------------------------------------+-------+-------+-------+-------+
 
 
-+------------------------------------------------------+
-; Minimum Progagation Delay                            ;
-+------------+---------------+-------+----+----+-------+
-; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
-+------------+---------------+-------+----+----+-------+
-; clk_clk    ; sdram_clk_clk ; 1.455 ;    ;    ; 1.455 ;
-+------------+---------------+-------+----+----+-------+
++------------------------------------------------------------------------------------+
+; Minimum Progagation Delay                                                          ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; Input Port ; Output Port                           ; RR    ; RF    ; FR    ; FF    ;
++------------+---------------------------------------+-------+-------+-------+-------+
+; clk_clk    ; pixel_buffer_external_interface_CLK   ; 1.455 ;       ;       ; 1.455 ;
+; clk_clk    ; sdram_clk_clk                         ; 1.456 ;       ;       ; 1.456 ;
+; clk_clk    ; vga_controller_external_interface_CLK ;       ; 1.560 ; 1.560 ;       ;
++------------+---------------------------------------+-------+-------+-------+-------+
 
 
 -------------------
@@ -288,10 +300,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 1     ; 1    ;
-; Unconstrained Input Ports       ; 17    ; 17   ;
-; Unconstrained Input Port Paths  ; 17    ; 17   ;
-; Unconstrained Output Ports      ; 38    ; 38   ;
-; Unconstrained Output Port Paths ; 54    ; 54   ;
+; Unconstrained Input Ports       ; 49    ; 49   ;
+; Unconstrained Input Port Paths  ; 51    ; 51   ;
+; Unconstrained Output Ports      ; 134   ; 134  ;
+; Unconstrained Output Port Paths ; 758   ; 758  ;
 +---------------------------------+-------+------+
 
 
@@ -301,7 +313,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 27 11:03:50 2018
+    Info: Processing started: Mon Apr 09 10:01:07 2018
 Info: Command: quartus_sta DE2_70 -c DE2_70
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -337,6 +349,9 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_valid}]
     Info (332165): Entity altera_std_synchronizer
         Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+    Info (332165): Entity dcfifo_5oj1
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_1v8:dffpipe16|dffe17a* 
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
@@ -346,6 +361,7 @@ Warning (332060): Node: clk_clk was determined to be a clock but was found witho
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: clocks|DE_Clock_Generator_System|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: clocks|DE_Clock_Generator_System|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Node: clocks|DE_Clock_Generator_System|pll|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -363,6 +379,7 @@ Warning (332060): Node: clk_clk was determined to be a clock but was found witho
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: clocks|DE_Clock_Generator_System|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: clocks|DE_Clock_Generator_System|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
+    Warning (332056): Node: clocks|DE_Clock_Generator_System|pll|clk[2] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -374,10 +391,10 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 470 megabytes
-    Info: Processing ended: Tue Mar 27 11:03:51 2018
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 491 megabytes
+    Info: Processing ended: Mon Apr 09 10:01:08 2018
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
